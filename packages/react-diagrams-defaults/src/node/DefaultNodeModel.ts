@@ -6,6 +6,7 @@ import { BasePositionModelOptions, DeserializeEvent } from '@projectstorm/react-
 export interface DefaultNodeModelOptions extends BasePositionModelOptions {
 	name?: string;
 	color?: string;
+	isShape?: boolean;
 }
 
 export interface DefaultNodeModelGenerics extends NodeModelGenerics {
