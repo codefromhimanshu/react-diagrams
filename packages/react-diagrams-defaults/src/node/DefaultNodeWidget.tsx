@@ -65,6 +65,9 @@ export class DefaultNodeWidget extends React.Component<DefaultNodeProps> {
 	};
 
 	render() {
+		if(this.props.node.getOptions().isShape) {
+			return <div>My shape</div>
+		}
 		return (
 			<S.Node
 				data-default-node-name={this.props.node.getOptions().name}
